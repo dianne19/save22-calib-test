@@ -1,0 +1,10 @@
+firstname = ['Shan', 'Dao Ming', 'Hua Ze', 'Xi', 'Mei']
+lastname = ['Cai', 'Si', 'Lei', 'Men', 'Zuo']
+
+fullnames = []
+for fname in firstname:
+    print firstname
+    for lname in lastname:
+        print lastname
+        fullnames.append(firstname + "  " + lastname)
+print fullnames
