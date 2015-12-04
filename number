@@ -1,0 +1,9 @@
+def list_append(i, L):
+    L.append(i)
+    if i==99:
+        return L
+    list_append(i+1, L)
+
+x_list = []
+list_append(0, x_list)
+print x_list
