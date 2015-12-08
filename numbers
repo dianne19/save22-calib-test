@@ -1,0 +1,6 @@
+num = range(1, 101)
+num = list(num)
+
+even = [x for x in num if x % 2 == 0]
+
+print sum(even)
