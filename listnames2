@@ -1,0 +1,17 @@
+fullnames = ['Nobita Nobi', 'Shizuka Minamoto', 'Takeshi Goda', 'Suneo Honekawa']
+firstname = []
+lastname = []
+
+for fn in fullnames:
+    f=fn.split(' ')
+    
+    fname = f[0]
+    firstname.append(fname)
+    
+    lname = f[1]
+    lastname.append(lname)
+
+
+print firstname
+print lastname
+
