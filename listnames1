@@ -1,0 +1,23 @@
+firstname = ['Shan', 'Dao Ming', 'Hua Ze', 'Xi', 'Mei']
+lastname = ['Cai', 'Si', 'Lei', 'Men', 'Zuo']
+
+fullnames = [ (fn + " " + lastname[a]) for a, fn in enumerate(firstname)]
+print (fullnames)
+
+
+
+#full_names = []
+#for first, last in zip(firstname, lastname):
+# full_names.append(first+" "+last)
+# "{} {}".format(first, last)
+#print full_names
+
+#firstname = ['Shan', 'Dao Ming', 'Hua Ze', 'Xi', 'Mei']
+#lastname = ['Cai', 'Si', 'Lei', 'Men', 'Zuo']
+
+#for fname in firstname:
+#    print firstname
+#    for lname in lastname:
+#        print lastname
+#        fullnames.append(firstname + "  " + lastname)
+#print fullnames
