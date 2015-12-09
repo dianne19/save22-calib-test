@@ -1,0 +1,35 @@
+r = {'Pedro': 22, 'Juan': 23 , 'Pepe': 24}
+
+def fName(a):
+    return a[0]
+
+def fAge(a):
+    return a[1]
+
+def lName(a):
+    return sorted(r.items(), key=lambda value:value[0])
+
+def lAge(a):
+    return sorted(r.items(), key=lambda value:value[1])
+
+choice = input("Enter 1/2- Function, 3/4 - Lambda: ")
+
+if choice == 1:
+    for z in sorted(r.items(), key=fName):
+        print z
+
+elif choice == 2:
+  for z in sorted(r.items(), key=fAge):
+    print z
+    
+elif choice == 3:
+  for z in lName(r):
+    print z
+    
+elif choice == 4:
+  for z in lAge(r):
+    print z
+
+else:
+    print "Invalid input. Please choose only between 1-4."
+    
