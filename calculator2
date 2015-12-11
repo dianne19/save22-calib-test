@@ -1,0 +1,54 @@
+def add(a,b):
+  sum = a+b
+  return sum
+  
+def sub(a,b):
+  dif = a-b
+  return dif
+  
+def multi(a,b):
+  mul = a*b
+  return mul
+  
+def divi(a,b):
+  div = a/b
+  return div
+
+def input1():
+  return int(raw_input("Enter 1st number: "))
+
+def input2():
+   return int(raw_input("Enter 2nd number: "))
+
+def inputope():
+    return raw_input("Enter operation: ")
+
+def operator (ope, a , b):
+      
+        if ope == '+':
+            return add(a,b)
+        elif ope == '-':
+            return sub(a,b)
+        elif ope == '*':
+            return multi(a,b)
+        elif ope == '/':
+            return divi(a,b)
+        else:
+            print ("Invalid input")
+
+        return None
+            
+def output(ope, a, b, ans):
+    
+        return '{} {} {} = {}'.format(a, ope, b, ans)
+
+    
+def main():
+        a = input1()
+        ope = inputope()
+        b = input2()
+        ans = operator(ope, a, b)
+        print output(ope, a, b, ans)
+
+if __name__ == '__main__':
+  main()
