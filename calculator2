@@ -14,14 +14,15 @@ def divi(a,b):
   div = a/b
   return div
 
-def input1():
-  return int(raw_input("Enter 1st number: "))
+def input1(input = raw_input):
+    return input("Enter 1st number: ")
 
-def input2():
-   return int(raw_input("Enter 2nd number: "))
+def input2(input = raw_input):
+    return input("Enter 2nd number: ")
 
-def inputope():
-    return raw_input("Enter operation: ")
+def inputope(input = raw_input):
+    return input("Enter operation: ")
+
 
 def operator (ope, a , b):
       
@@ -48,7 +49,7 @@ def main():
         ope = inputope()
         b = input2()
         ans = operator(ope, a, b)
-        print output(ope, a, b, ans)
+        print (output(ope, a, b, ans))
 
 if __name__ == '__main__':
   main()
