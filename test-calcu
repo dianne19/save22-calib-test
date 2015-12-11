@@ -21,7 +21,11 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             calcu.divi(10,0)
 
-
+    def test_operator(self):
+        self.assertEqual(calcu.operator('+',13,11),24)
+        self.assertEqual(calcu.operator('-',15,-10),25)
+        self.assertEqual(calcu.operator('*',7,-3),-21)
+        self.assertEqual(calcu.operator('/',16,2),8)
     
       
 
