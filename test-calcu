@@ -1,0 +1,29 @@
+import calcu
+import unittest
+class TestCalculator(unittest.TestCase):
+    def test_Add(self):
+        self.assertEqual(
+            calcu.add(1,1),2)
+##        with self.assertRaises(TypeError):
+##            calcu.add('1',1)
+
+    def test_Sub(self):
+        self.assertEqual(
+            calcu.sub(1,1),0)
+
+    def test_Multi(self):
+        self.assertEqual(
+            calcu.multi(1,1),1)
+
+    def test_Divi(self):
+      #  self.assertEqual(
+      #      calcu.divi(10,0),0)
+        with self.assertRaises(ZeroDivisionError):
+            calcu.divi(10,0)
+
+
+    
+      
+
+if __name__ == "__main__":
+    unittest.main()
